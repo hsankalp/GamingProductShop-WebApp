@@ -1,0 +1,162 @@
+<!doctype html>
+
+<!-- Sign Up -->
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Sign Up Page</title>
+	<link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+
+<body>
+
+
+<div id="container">
+    <header>
+    	<h1><a href="index.html">Game<span>Speed</span></a></h1>
+        <h2>Buy and Sell New and Pre-owned Game Consoles, Games and Tablets</h2>
+	</header>
+	
+	<nav>
+    	<ul>
+        	<li class="start selected"><a href="index.html">Home</a></li>
+            <li class=""><a href="XBox.html">Microsoft</a></li>
+            <li class=""><a href="PlayStation.html">Sony</a></li>
+            <li class=""><a href="Wii.html">Nintendo</a></li>
+			<li class=""><a href="EA.html">Electronic Arts</a></li>
+			<li class=""><a href="AV.html">Activision</a></li>
+			<li class=""><a href="TTI.html">Take-Two Interactive</a></li>
+			<li class="end"><a href="#">Accessories</a></li>
+			
+        </ul>
+    </nav>
+    
+	
+
+    <div id="body">		
+
+	<section id="content">
+	
+		<center>
+			<form method="post" action="/csj/SignupServlet">
+			<br><br>
+			<h4>Enter the User ID and Password to Create Account</h4>
+			<table cellpadding='2' cellspacing='1'>
+				<tr>
+					<td>First Name</td>
+					<td><input type="TEXT" size="15" ></input></td>
+				</tr>
+				<tr>
+					<td>Last Name</td>
+					<td><input type="TEXT" size="15" ></input></td>
+				</tr>
+				<tr>
+					<td>User ID</td>
+					<td><input type="TEXT" size="15" name="userid"></input></td>
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td><input type="PASSWORD" size="15" name="password"/></td>
+				</tr>
+				<tr>
+					<td colspan='2'>
+					<center><input type="submit" value="Create Account" /></center>
+				</td>
+				</tr>
+			</table>
+			</form>
+		</center>
+	    
+    </section>
+        
+    <aside class="sidebar">
+	
+            <ul>	
+               <li>
+                    <h4>Game Consoles</h4>
+                    <ul>
+                        <li><a href="XBox.html">Microsoft</a></li>
+                        <li><a href="PlayStation.html">Sony</a></li>
+						<li><a href="Wii.html">Nintendo</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    
+                    </ul>
+                </li>
+                
+				<li>
+                    <h4>Games</h4>
+                    <ul>
+                        <li><a href="EA.html">Electronic Arts</a></li>
+                        <li><a href="AV.html">Activision</a></li>
+                        <li><a href="TTI.html">Take-Two Interactive</a></li>
+                    
+                    </ul>
+                </li>
+				
+                <li>
+                    <h4>Contact us</h4>
+                    <ul>
+                        <li class="text">
+                        	<p style="margin: 0;">1234 South King Drive,
+							Chicago,
+							Illinois - 60616
+							Contact: 123456789</p>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li>
+                	<h4>Search site</h4>
+                    <ul>
+                    	<li class="text">
+                            <form method="get" class="searchform" action="#" >
+                                <p>
+                                    <input type="text" size="25" value="" name="s" class="s" />
+                                    
+                                </p>
+                            </form>	
+						</li>
+					</ul>
+                </li>
+                
+                <li>
+                    <h4>Games Information</h4>
+                    <ul>
+                        <li><a href="http://www.ea.com/pc" title="ea games">Electronic Arts</a></li>
+                        <li><a href="https://www.activision.com/games" title="activision games">Activision</a></li>
+						<li><a href="http://www.take2games.com/games/" title="tti games">Take-Two Interactive</a></li>
+                        
+                    </ul>
+                </li>
+                
+            </ul>
+		
+    </aside>
+    
+	<div class="clear"></div>
+	</div>
+    
+	<footer>
+	
+        <div class="footer-content">
+            <ul>
+            	<li><h4>Connect With Us</h4></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Forum</a></li>
+                <li><a href="#">Facebook</a></li>
+			</ul>
+           
+        <div class="clear"></div>
+        </div>
+		
+        <div class="footer-bottom">
+            <p>CSP 595 - Enterprise Web Application</p>
+        </div>
+		
+    </footer>
+</div>
+
+</body>
+
+</html>

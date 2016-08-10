@@ -1,0 +1,156 @@
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>CSP 595 - Enterprise Web Application</title>
+	<link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+
+<body>
+
+
+<div id="container">
+    <header>
+    	<h1><a href="index.html">Game<span>Speed</span></a></h1>
+        <h2>Buy and Sell New and Pre-owned Game Consoles, Games and Tablets</h2>
+		
+		<a href="login.html" >LOGIN</a>
+		
+		<a href="login_2.html" >STAFF LOGIN</a><br><br>
+		
+    </header>
+	
+	<nav>
+    	<ul>
+        	<li class="start selected"><a href="index.html">Home</a></li>
+            <li class=""><a href="XBox.html">Microsoft</a></li>
+            <li class=""><a href="PlayStation.html">Sony</a></li>
+            <li class=""><a href="Wii.html">Nintendo</a></li>
+			<li class=""><a href="EA.html">Electronic Arts</a></li>
+			<li class=""><a href="AV.html">Activision</a></li>
+			<li class=""><a href="TTI.html">Take-Two Interactive</a></li>
+			
+			<li class="end"><a href="#">Accessories</a></li>
+			
+        </ul>
+    </nav>
+    
+    <div id="body">		
+
+	<section id="content">
+	
+
+	<h1 align="center">Check Out</h1>
+	<form method="get" action="SubmitOrder.jsp">			
+
+<legend>Personal information:</legend>
+<table>
+<tr>
+<td> First name: </td>
+<td> <input type="text" name="firstName"> </td>
+</tr>				
+<tr>
+<td> Last name: </td>
+<td> <input type="text" name="lastName"> </td>
+</tr>				
+<tr>
+<td> Address: </td>
+<td> <input type="text" name="address"> </td>
+</tr>
+<tr>
+<td> Phone: </td>
+<td> <input type="text" name="phoneNumber"> </td>
+</tr>
+</table>
+<br><br>
+			
+
+	<h2> Please provide your Card Details:</h2>
+	
+	
+		<table>
+			<tr><td><label>Name on the Card:<input type =text name=cname value="" size=30></label>
+				</td>
+			</tr><br>
+			<tr>
+				<td><label>Card Number:<input type=text name=ccnum value="" size=16 maxlength=16></label>
+				</td>
+			</tr><br/>
+			<tr>
+				<td>
+				<label>Card Expiration date:</label><br>Month<input type=text name=ccmm value="" size=2 maxlength=2>Year<input type=text name=ccyy value="" size=2 maxlength=2>
+				</td>
+			<br/>
+			</tr>
+			<tr>
+				<td>CVV<input type=text name=cccvv value="" size=3 maxlength=3>
+				</td><br/>
+			</tr>
+		
+		</table>
+		
+			<input type="submit" value = "Place Order"/></t>
+			  
+	</form>
+		
+	    
+		
+		
+    </section>
+        
+    <aside class="sidebar">
+	
+            <ul>	
+               
+				
+				<li>
+                    <h4>Game Consoles</h4>
+                    <ul>
+                        <li><a href="XBox.html">Microsoft</a></li>
+                        <li><a href="PlayStation.html">Sony</a></li>
+						<li><a href="Wii.html">Nintendo</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    
+                    </ul>
+                </li>
+                
+				<li>
+                    <h4>Games</h4>
+                    <ul>
+                        <li><a href="EA.html">Electronic Arts</a></li>
+                        <li><a href="AV.html">Activision</a></li>
+                        <li><a href="TTI.html">Take-Two Interactive</a></li>
+                    
+                    </ul>
+                </li>
+				
+                <li>
+                    <h4>Games Information</h4>
+                    <ul>
+                        <li><a href="http://www.ea.com/pc" title="ea games">Electronic Arts</a></li>
+                        <li><a href="https://www.activision.com/games" title="activision games">Activision</a></li>
+						<li><a href="http://www.take2games.com/games/" title="tti games">Take-Two Interactive</a></li>
+                        
+                    </ul>
+                </li>
+                
+            </ul>
+		
+    </aside>
+    
+	<div class="clear"></div>
+	</div>
+    
+	<footer>
+	
+        
+        <div class="footer-bottom">
+            <p>CSP 595 - Enterprise Web Application</p>
+        </div>
+		
+    </footer>
+</div>
+
+</body>
+
+</html>

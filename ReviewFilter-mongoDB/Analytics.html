@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Data Analytics</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+
+<body>
+
+    <div id="container">
+   
+        
+		
+
+        <div id="body">
+
+            <section id="review-content">
+
+                <article>
+
+                    <h3> Find Data </h3>
+
+                    <form method="post" class="searchform" action="Analytics">
+
+                        <table class = "query-table">
+							<tr>
+								<td colspan = "4"> <b> Simple Search </b> </td>
+							</tr>
+                            
+							<tr>
+								<td> <input type="checkbox" name="queryCheckBox" value="productName" checked> Select </td>
+                                <td> Product Name: </td>
+                                <td>
+                                    <select name="productName">
+										<option value="ALL_PRODUCTS">All Products</option>
+                                        <option value="X Box One">X Box One</option>
+                                        <option value="X Box 360">X Box 360</option>
+                                        <option value="PlayStation 3">Playstation 3</option>
+                                        <option value="PlayStation 4">Playstation 4</option>
+                                        <option value="Wii">Wii</option>
+                                        <option value="WiiU">WiiU</option>
+                                        <option value="Fifa 2015">Fifa 2015</option>
+                                        <option value="Call of Duty: Advanced Warfare">Call of Duty: Advanced Warfare</option>
+                                        <option value="Call of Duty: Black Ops">Call of Duty: Black Ops</option>
+										<option value="NBA 2K15">NBA 2K15</option>
+										<option value="WWE 2K15">WWE 2K15</option>
+                                </td>
+								<td> </td>
+                            </tr>
+							
+							<tr>
+								<td> <input type="checkbox" name="queryCheckBox" value="productCategory"> Select </td>
+                                <td> Product Category: </td>
+                                <td>
+                                    <input type="text" name="productCategory" value = "All" class="s" /> </td>
+								<td> </td>
+								<td> </td>
+                            </tr>
+
+                            <tr>
+								<td> <input type="checkbox" name="queryCheckBox" value="productPrice"> Select </td>
+                                <td> Product Price: </td>
+                                <td>
+                                    <input type="number" name="productPrice" value = "0" size=10 class="s" /> </td>
+								<td>
+									<input type="radio" name="comparePrice" value="EQUALS_TO" checked> Equals <br>
+									<input type="radio" name="comparePrice" value="GREATER_THAN"> Greater Than <br>
+									<input type="radio" name="comparePrice" value="LESS_THAN"> Less Than
+								</td>
+
+                            </tr>
+							
+							 <tr>
+								<td> <input type="checkbox" name="queryCheckBox" value="retailerName"> Select </td>
+                                <td> Retailer Name: </td>
+                                <td>
+                                    <input type="text" name="retailerName" value = "All" class="s" /> </td>
+								<td> </td>
+                            </tr>
+
+                            <tr>
+								<td> <input type="checkbox" name="queryCheckBox" value="retailerZip"> Select </td>
+                                <td> Retailer Zip code: </td>
+                                <td>
+                                    <input type="number" name="retailerZip" value = "0" size=10/> </td>
+								<td> </td>
+                            </tr>
+
+                            <tr>
+								<td> <input type="checkbox" name="queryCheckBox" value="retailerCity"> Select </td>
+                                <td> Retailer City: </td>
+                                <td>
+                                    <input type="text" name="retailerCity" value = "All" class="s" /> </td>
+								<td> </td>
+                            </tr>
+							
+							<tr>
+								<td> <input type="checkbox" name="queryCheckBox" value="retailerState"> Select </td>
+                                <td> Retailer State: </td>
+                                <td>
+                                    <input type="text" name="retailerState" value = "All" class="s" /> </td>
+								<td> </td>
+                            </tr>
+							
+							<tr>
+								<td> <input type="checkbox" name="queryCheckBox" value="productOnSale"> Select </td>
+                                <td> Product On Sale: </td>
+                                <td>
+									<input type="radio" name="productOnSale" value="Yes" checked> Yes <br>
+									<input type="radio" name="productOnSale" value="No"> No
+									
+								</td>
+
+                            </tr>
+							
+							<tr>
+								<td> <input type="checkbox" name="queryCheckBox" value="manufacturerName"> Select </td>
+                                <td> Manufacturer Name: </td>
+                                <td>
+                                    <input type="text" name="manufacturerName" value = "All" class="s" /> </td>
+								<td> </td>
+                            </tr>
+							
+							<tr>
+								<td> <input type="checkbox" name="queryCheckBox" value="manufacturerRebate"> Select </td>
+                                <td> Manufacturer Rebate: </td>
+                                <td>
+									<input type="radio" name="manufacturerRebate" value="Yes" checked> Yes <br>
+									<input type="radio" name="manufacturerRebate" value="No"> No
+									
+								</td>
+
+                            </tr>
+							
+							<tr>
+								<td> <input type="checkbox" name="queryCheckBox" value="userAge"> Select </td>
+                                <td> Reviewer Age: </td>
+                                <td>
+                                    <input type="number" name="userAge" value = "0" size=10 class="s" /> </td>
+								<td>
+									<input type="radio" name="compareAge" value="EQUALS_TO" checked> Equals <br>
+									<input type="radio" name="compareAge" value="GREATER_THAN"> Greater Than <br>
+									<input type="radio" name="compareAge" value="LESS_THAN"> Less Than <br>
+									
+								</td>
+
+                            </tr>
+							
+							<tr>
+								<td> <input type="checkbox" name="queryCheckBox" value="userGender"> Select </td>
+                                <td> User Gender: </td>
+                                <td>
+									<input type="radio" name="userGender" value="Male" checked> Male <br>
+									<input type="radio" name="userGender" value="Female"> Female
+									
+								</td>
+
+                            </tr>
+
+                            <tr>
+								<td> <input type="checkbox" name="queryCheckBox" value="reviewRating"> Select </td>
+                                <td> Review Rating: </td>
+                                <td>
+                                    <select name="reviewRating">
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                </td>
+								<td>
+									<input type="radio" name="compareRating" value="EQUALS_TO" checked> Equals <br>
+									<input type="radio" name="compareRating" value="GREATER_THAN"> Greater Than <br>
+								</td>
+                            </tr>
+							
+							<tr>
+								<td>
+									Return:
+								</td>
+								<td colspan = "4"> 
+									<select name="returnValue">
+										<option value="ALL" selected>All</option>
+                                        <option value="TOP_5">Top 5 </option>
+										<option value="MAX_PRICE">Maximum Price </option>
+										<option value="COUNT_ONLY">Get the Count </option>
+										<option value="TOP_2">Top 2 </option>
+										
+                                </td>
+							</tr>							
+							<tr>
+								<td colspan = "4"> <b> Grouping </b> </td>
+							</tr>
+							
+							<!-- <tr>
+							
+								<td>
+                                <input type="checkbox" name="extraSettings" value="COUNT_ONLY"> Get the Count
+								</td>
+							
+							</tr> -->
+							<tr>
+							
+								<td>
+                                <input type="checkbox" name="extraSettings" value="GROUP_BY"> Group By
+								</td>
+								
+								
+
+								<td colspan = "3">
+								<select name="groupByDropdown">
+                                        <option value="GROUP_BY_CITY" selected>City</option>
+                                        <option value="GROUP_BY_PRODUCT">Product Name</option>
+										<option value="GROUP_BY_RETAILER">Retailer Name</option>	
+										<option value="GROUP_BY_ZIP">Zip Code</option>
+										<option value="GROUP_BY_STATE">State</option>
+										<option value="GROUP_BY_CATEGORY">Category</option>
+										<option value="GROUP_BY_POS">Product on Sale</option>
+										<option value="GROUP_BY_MN">Manufacturer Name</option>
+										<option value="GROUP_BY_MR">Manufacturer Rebate</option>
+										<option value="GROUP_BY_UGENDER">User Gender</option>
+										<option value="GROUP_BY_RATING">Rating</option>
+					            </td>
+                            </tr>
+							
+                            <tr>
+                                <td colspan = "4"> <input type="submit" value="Find Data" class="formbutton" /> </td>
+                                
+                            </tr>
+						</table>
+						<table>						
+							<tr>
+                                <br><a href="Trending" class="button" method="get">Trending Products</a>
+                                
+                            </tr>
+
+                        </table>
+                    </form>
+
+                </article>
+				
+
+            </section>
+
+            <div class="clear"></div>
+        </div>
+
+        <footer>
+
+           
+
+        </footer>
+    </div>
+
+
+</body>
+
+</html>
